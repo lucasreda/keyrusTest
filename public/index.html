@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tela de Login</title>
+    <link href="assets/css/app.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+              <div class="container">
+
+                <div class="row col-lg-offset-2">
+                  <div class="successMsg">Logado com sucesso.</div>
+                  <div class="errorMsg">Usuário ou senha inválido.</div>
+                </div>
+                
+                  <div class="row">
+                    
+                      <div class="loginComponent col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4  text-center">
+                          <h2 class="loginComponent__title">Entrar na minha conta</h2>
+                          <form onsubmit="return false">
+                          <div class="row">
+                          <input class="loginComponent__input loginComponent__input--user" id="user" type="text" placeholder="Usuário">
+                        </div>
+                        <div class="row">
+                          <input class="loginComponent__input loginComponent__input--password" id="password" type="password" placeholder="Senha">
+                        </div>
+                          <div class="row">
+                           <button class="loginComponent__button" onclick="validate()" >Entrar</button>
+                          </div>
+                          <div class="row">
+                              <div class="form-check loginComponent__check">
+                                  <input type="checkbox" class="form-check-input">
+                                  <label class="form-check-label">Mantenha-me conectado</label>
+                                </div>
+                          </div>
+                          </form>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="extraInfo text-center">
+                          <h3 class="extraInfo__newAccount">Precisa de uma conta? <a href="#">Inscrever-se</a></h3>
+                          <h4 class="extraInfo__lostPassword">Esqueceu sua senha? <a href="#">Clique aqui.</a></h4>
+                          </div>
+                  </div>
+
+                  <footer class="row footer align-items-center justify-content-center">
+                      <div class="col-xs-1 col-sm-1 col-md-1 text-center footer__icon">
+                        <span>i</span>
+                      </div>
+                      <div class="col-xs-12 col-sm-11 col-md-11 text-center footer__box">
+                       <span>Keyrus</span>
+                      </div>
+                  </footer>
+
+
+                  
+          
+          
+      </div>
+              
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

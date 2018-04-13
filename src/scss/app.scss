@@ -1,0 +1,171 @@
+@import "bootstrap";
+$imagePath: "../img";
+
+
+body {
+	padding-top: 100px;
+	background-image: url('#{$imagePath}/background.jpg');
+	border-top: 7px solid #d6d6d6;
+	text-shadow: 1px 1px #FFF;
+	color: #959595;
+	a{
+	  color: #2993de;
+	}
+}
+
+.loginComponent{
+	background-image:  url('#{$imagePath}/formContainer.png');
+	background-size: 100%;
+	background-position: right 0px bottom 0px;
+	background-repeat: no-repeat;
+    min-height: 287px;
+	margin-top: 50px;
+	justify-content: center;
+	padding-top: 20px;
+	
+	.loginComponent__title{
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: #939797;
+	text-shadow: 2px 3px 8px rgba(59, 37, 17, 0.35) inset; 
+	}
+	.loginComponent__input{
+	background-size: cover;
+	border-style: none;
+	height: 36px;
+	min-width: 213px;
+	padding: 0px 0px 0px 15px;
+	margin-bottom: 10px;
+	color: rgb(146, 146, 146);
+	font-size: 13px;
+	}
+	.loginComponent__input--user{
+	background-image:  url('#{$imagePath}/inputUser.png');
+	}
+	.loginComponent__input--password{
+	background-image:  url('#{$imagePath}/inputPass.png');
+	}
+	.loginComponent__button{
+	background-color: #FFF;
+	background-image:  url('#{$imagePath}/button.png');
+	background-size: cover;
+	outline: none;
+	border: none;
+	width: 120px;
+	height: 45px;
+	font-weight: bold;
+	color: #FFF;
+	text-shadow: 1px 1px #1c6497;
+	transition: background-image 0.5s ease;
+	}
+	.loginComponent__button:hover{
+	background-image:  url('#{$imagePath}/button2.png');
+	}
+	.loginComponent__check{
+     font-size: 13px;
+	 margin-top: 10px;
+	 font-weight: 200;
+	}	
+}
+
+.successMsg{
+	max-width: 713px;
+	height: 60px;
+	background-image:  url('#{$imagePath}/success.png');
+	padding: 20px 20px 0px 0px;
+	text-align: right;
+	color: #299a60;
+	text-shadow: 1px 1px #a1ecc6;
+	font-weight: 600;
+}
+
+.errorMsg{
+	font-weight: 600;
+	max-width: 713px;
+	height: 60px;
+	background-image:  url('#{$imagePath}/error.png');
+	padding: 20px 20px 0px 0px;
+	text-align: right;
+	color: #a93b3b;
+	text-shadow: 1px 1px #f6aeae;
+	
+}
+
+.extraInfo{
+	margin-top: -10px;
+	.extraInfo__newAccount{
+	font-size: 15px;
+	font-weight: 600;
+	text-decoration: underline;
+	}
+	.extraInfo__lostPassword{
+	font-size: 13px;
+	margin-top: 15px;
+	}
+}
+
+.footer{
+	margin: auto;
+    width: 50%;
+	margin-top: 80px;
+	.footer__icon{
+	background: grey;
+	color: #FFF;
+	justify-content: center;
+	height: 35px;
+	padding: 2px 0px 2px 0px;
+	font-size: 22px;
+	font-weight: 600;
+	text-shadow: 1px 1px #6e6e6e;
+	}
+	.footer__box{
+	width: 90.5%;
+	float: right;
+	padding: 8px 0px 8px 0px;
+	height: 35px;
+	background: #FFF;
+	box-shadow: 1px 1px 1px #e1e1e1;
+	font-style: italic;
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 986px){
+    .loginComponent__title{
+    margin-top: 30px !important;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .loginComponent__title{ 
+	font-size: 15px !important;
+	margin-top: 60px !important;
+	margin-bottom: 10px !important;
+	}
+	.loginComponent__check{
+     margin-top: 0px !important;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.loginComponent{
+	background-size: contain;
+	background-position: center;
+	}
+	.successMsg{
+		width: 98%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.errorMsg{
+	 width: 98%;
+	 background-size: contain;
+	 background-position: center;
+	 background-repeat: no-repeat;
+	}
+    .footer{
+    width: 100% !important;
+	}
+}
